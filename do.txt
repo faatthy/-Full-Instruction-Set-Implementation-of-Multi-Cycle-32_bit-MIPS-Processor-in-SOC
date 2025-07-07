@@ -1,0 +1,6 @@
+vlib work
+vlog -f sourcefile.txt
+vsim -voptargs=+accs work.MIPS_PIPE_tb
+add wave *
+add wave -position 13  sim:/MIPS_PIPE_tb/DUT/rf/Mem_Reg
+run -all 
